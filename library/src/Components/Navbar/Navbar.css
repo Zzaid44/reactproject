@@ -1,0 +1,46 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #0b0b0b;
+    color: white;
+
+
+}
+.logo h2{
+    margin: 0;
+   
+   font-size: 38px;
+   font-weight: bold;
+   font-family: 'Poppins', sans-serif;
+   color: rgb(255, 255, 255);
+   letter-spacing: 2px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.logo span{
+     color: #ff6600;
+    text-shadow: 0 0 8px #ff6600;
+    font-size: 48px;
+
+}
+.logo h2:hover{
+    transform: scale(1.1);
+}
+.nav-linke{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+.nav-linke li a{
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    transition: 0.3s;
+}
+.nav-linke li a:hover{
+    color: #ff6600;
+}
