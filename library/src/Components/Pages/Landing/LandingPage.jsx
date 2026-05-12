@@ -1,9 +1,16 @@
 import Navbar from "../../Navbar/Navbar";
 import Hero from "../../Hero/hero";
-function LandingPage(){
-    return<>
-    <Navbar />
-    <Hero />
+import MenuList from "../../Menu/MenuCards/SuvList";
+import HomeCard from "../../HomeCard/HomeCard";
+
+function LandingPage() {
+  return (
+    <>
+   
+      <Hero />
+      <HomeCard />
+     
     </>
+  );
 }
 export default LandingPage;

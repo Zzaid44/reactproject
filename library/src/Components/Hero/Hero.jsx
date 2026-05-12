@@ -1,14 +1,44 @@
+import "./Hero.css";
+import za from "../../assets/za.jpg"
 
-import "./Hero.css"
+function Hero() {
+  
+  return (
+    <>
+     <section className="hero">
 
-function Hero(){
-    return<>
-<div className="container">
-    <img src="./src/assets/car.jpeg" alt="carrr" />
-     <pre className="title"> DriveZ
-</pre>
-</div>
+      <img src={za} className="hero-image" />
+
+      <div className="overlay"></div>
+
+      <div className="hero-content">
+
+        <h1>
+
+          Rent your car <br />
+
+          the <span>easy</span> way
+
+        </h1>
+
+        <p>
+
+          From luxury to economy <br />
+
+          Fast process • Great prices
+
+        </p>
+
+       
+
+      </div>
+
+    </section>
+
+
+
+
     </>
-
+  );
 }
 export default Hero;
