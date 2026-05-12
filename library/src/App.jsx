@@ -15,12 +15,13 @@ import Footer from "./Components/Footer/Footer.jsx";
 import UserDashboardPage from "./Components/Pages/Landing/User/UserDashboardPage.jsx";
 import AdminDashboard from "./Components/Admin/AdminDashboard.jsx";
 import AboutUs from "./Components/aboutus/Aboutus.jsx";
+import ScrollToTop from "./Components/Scroll/ScrollToTop.jsx";
 function App() {
   return (
     <>
       <Toaster />
       <Navbar />
-
+        <ScrollToTop />
       <Routes>
         <Route path="/LandingPage" element={<LandingPage />} />
         <Route path="/suv" element={<SuvList />} />
