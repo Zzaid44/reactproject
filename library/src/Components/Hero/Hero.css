@@ -9,11 +9,12 @@
 
 }
 .title{
-   
+   color: #ffffff;
+
     position: absolute;
-    top: 5%;
-    left: 10%;
-   font-size: 48px;
+    top: 6%;
+    left: 3%;
+   font-size: 23px;
    /* font-weight: bold;
    font-family: 'Poppins', sans-serif;
    color: rgb(255, 255, 255);
@@ -23,11 +24,12 @@
 
 
 }
+
 /* .title span{
     color: #ff6600;
     text-shadow: 0 0 8px #ff6600;
 
 } */
-/* .title h1:hover{
+.title:hover{
     transform: scale(1.1);
-} */
+}

@@ -31,16 +31,17 @@
 .nav-linke{
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 22px;
     margin: 0;
     padding: 0;
+    
 }
-.nav-linke li a{
+.nav-linke li button{
     text-decoration: none;
     color: white;
-    font-size: 21px;
+    font-size: 18px;
     transition: 0.3s;
 }
-.nav-linke li a:hover{
+.nav-linke li button:hover{
     color: #ff6600;
 }
