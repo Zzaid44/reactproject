@@ -9,10 +9,11 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";   
+import { useNavigate } from "react-router-dom";
 
 function Caravan({ name, description, image, price, quantity }) {
   const [open, setOpen] = useState(false);
-
+  const navigate = useNavigate()
   const handleOpen = () => {
     setOpen(true);
   };
@@ -39,7 +40,7 @@ function Caravan({ name, description, image, price, quantity }) {
             sx={{ px: 12, backgroundColor: "#ff6600" }}
             onClick={handleOpen}
           >
-            add to card
+            Viw
           </Button>
         </CardActions>
       </Card>
@@ -50,7 +51,7 @@ function Caravan({ name, description, image, price, quantity }) {
             margin: "300px 600px",
             padding: "15px",
             bgcolor: "white",
-            border: "2px solid #ff6600",
+            border: "2px solid #000000",
             boxShadow: 25,
             borderRadius: "50px",
           }}
@@ -64,6 +65,7 @@ function Caravan({ name, description, image, price, quantity }) {
           <Typography variant="h6" align="center">
             description :{description}
           </Typography>
+            <Button sx={{textAlign:"center",color:"black",marginLeft:"240px",bgcolor:"#ff6600",marginTop:"20px"}} onClick={() => navigate("/aboutus") }>Booking Conditions</Button>
         </Box>
       </Modal>
     </>

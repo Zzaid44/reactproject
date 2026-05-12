@@ -3,16 +3,15 @@ import { useState } from "react";
 import { UserContext } from "../context/UserContext";
 import { useContext } from "react";
 function Login (){
-  const {register} = useContext(UserContext);
+  const {login} = useContext(UserContext);
   const [formData, setformData] = useState({
-    name: "",
+   
     email: "",
     password: "",
   });
-  const handleSubmit = () => {
-    console.log(formData);
-     register(formData);
-  };
+const handleSubmit = () =>{
+    login(formData)
+}
 
   return (
     <>
@@ -22,13 +21,14 @@ function Login (){
           marginTop: "100px",
           borderRadius: "50px",
           width: "900px",
+         marginBottom:"100px"
         }}
       >
         <Typography
           variant="h2"
           sx={{ color: "#ff6600", textAlign: "center", marginTop: "30px" }}
         >
-          Sign Up
+          Sign in
         </Typography>
 
         <Box
@@ -41,12 +41,7 @@ function Login (){
             alignItems: "center",
           }}
         >
-          <TextField
-            label="Name:"
-            value={formData.name}
-            onChange={(e) => setformData({ ...formData, name: e.target.value })}
-            sx={{ width: { xs: "100%", sm: "600px" } }}
-          />
+         
           <TextField
             label="Email:"
             value={formData.email}
@@ -71,7 +66,7 @@ function Login (){
             sx={{ width: { xs: "100%", sm: "200px" } }}
             type="submit"
           >
-            Register
+           Login
           </Button>
         </Box>
       </Container>

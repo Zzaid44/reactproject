@@ -39,7 +39,9 @@ function Register() {
             m: 3,
             gap: 3,
             alignItems: "center",
+            
           }}
+          
         >
           <TextField
             label="Name:"

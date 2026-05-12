@@ -1,19 +1,43 @@
 import "./Hero.css";
+import za from "../../assets/za.jpg"
 
 function Hero() {
+  
   return (
     <>
-      <div className="container">
-        <img src="./src/assets/car.jpeg" alt="carrr" />
-        <p className="title">
-          Rent your car (easy)
-          <br />
-          From luxury to economy
-          <br />
+     <section className="hero">
+
+      <img src={za} className="hero-image" />
+
+      <div className="overlay"></div>
+
+      <div className="hero-content">
+
+        <h1>
+
+          Rent your car <br />
+
+          the <span>easy</span> way
+
+        </h1>
+
+        <p>
+
+          From luxury to economy <br />
+
           Fast process • Great prices
-          <br />
+
         </p>
+
+       
+
       </div>
+
+    </section>
+
+
+
+
     </>
   );
 }

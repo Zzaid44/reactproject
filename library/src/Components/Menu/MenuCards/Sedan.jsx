@@ -9,17 +9,19 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Sedan({ name, description, image, price, quantity }) {
   const [open, setOpen] = useState(false);
-
+     const navigate = useNavigate()
   const handleOpen = () => {
     setOpen(true);
   };
   const handleClose = () => setOpen(false);
   return (
     <>
-      <Card sx={{ maxWidth: 345 }}>
+    
+      <Card  sx={{ maxWidth: 345 }}>
         <CardMedia component="img" image={image} height="200" width="200" />
         <CardContent>
           <Typography variant="h6" sx={{ textAlign: "center", color: "" }}>
@@ -36,10 +38,10 @@ function Sedan({ name, description, image, price, quantity }) {
         <CardActions>
           {/* <Button>viw</Button> */}
           <Button
-            sx={{ px: 12, backgroundColor: "#ff6600" }}
+            sx={{ px: 12, backgroundColor: "#ff6600",color:"black" }}
             onClick={handleOpen}
           >
-            add to card
+            Viw
           </Button>
         </CardActions>
       </Card>
@@ -64,6 +66,7 @@ function Sedan({ name, description, image, price, quantity }) {
           <Typography variant="h6" align="center">
             description :{description}
           </Typography>
+          <Button sx={{textAlign:"center",color:"black",marginLeft:"240px",bgcolor:"#ff6600",marginTop:"20px"}} onClick={() => navigate("/aboutus") }>Booking Conditions</Button>
         </Box>
       </Modal>
     </>

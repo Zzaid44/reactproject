@@ -17,11 +17,12 @@ function HomeCard() {
     <>
       <Container sx={{ py: 6 }}>
         <Typography variant="h3" sx={{ py: 4, px: 8, color: "black" }}>
+          
           Categories:
         </Typography>
         <hr />
         <hr />
-        <Grid container spacing={6}>
+        <Grid  container spacing={6}>
           <Card sx={{ maxWidth: 345 }}>
             <CardMedia
               component="img"

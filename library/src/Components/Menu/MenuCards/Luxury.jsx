@@ -9,9 +9,11 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Luxury({ name, description, image, price, quantity }) {
   const [open, setOpen] = useState(false);
+    const navigate = useNavigate()
 
   const handleOpen = () => {
     setOpen(true);
@@ -39,7 +41,7 @@ function Luxury({ name, description, image, price, quantity }) {
             sx={{ px: 12, backgroundColor: "#ff6600" }}
             onClick={handleOpen}
           >
-            add to card
+           Viw
           </Button>
         </CardActions>
       </Card>
@@ -64,6 +66,7 @@ function Luxury({ name, description, image, price, quantity }) {
           <Typography variant="h6" align="center">
             description :{description}
           </Typography>
+           <Button sx={{textAlign:"center",color:"black",marginLeft:"240px",bgcolor:"#ff6600",marginTop:"20px"}} onClick={() => navigate("/aboutus") }>Booking Conditions</Button>
         </Box>
       </Modal>
     </>

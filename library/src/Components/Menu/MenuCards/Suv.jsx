@@ -9,10 +9,11 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Suv({ name, description, image, price, quantity }) {
   const [open, setOpen] = useState(false);
-
+     const navigate = useNavigate()
   const handleOpen = () => {
     setOpen(true);
   };
@@ -37,10 +38,10 @@ function Suv({ name, description, image, price, quantity }) {
         <CardActions>
           {/* <Button>viw</Button> */}
           <Button
-            sx={{ px: 12, backgroundColor: "#ff6600" }}
+            sx={{ px: 12, backgroundColor: "#ff6600",color:"black" }}
             onClick={handleOpen}
           >
-            add to card
+            Viw
           </Button>
         </CardActions>
       </Card>
@@ -65,6 +66,7 @@ function Suv({ name, description, image, price, quantity }) {
           <Typography variant="h6" align="center">
             description :{description}
           </Typography>
+          <Button sx={{textAlign:"center",color:"black",marginLeft:"240px",bgcolor:"#ff6600",marginTop:"20px"}} onClick={() => navigate("/aboutus") }>Booking Conditions</Button>
         </Box>
       </Modal>
     </>
